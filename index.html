@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="https://ashvinmotye.com/icon.png">
+  <title>Electricity Tariff Mauritius | Ashvin Motye</title></title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Electricity Tariff Mauritius</h1>
+    <label for="consumption">Monthly Consumption (kWh):</label>
+    <input type="number" id="consumption" min="0" />
+    <button onclick="calculateBill()">Calculate Bill</button>
+    <div id="result"></div>
+    <table id="breakdownTable" class="hidden">
+      <thead>
+        <tr>
+          <th>Range</th>
+          <th>Units Charged</th>
+          <th>Rate (Rs./kWh)</th>
+          <th>Subtotal (Rs.)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="mobileBreakdown" class="hidden"></div>
+    <p class="disclaimer hidden">
+        The above domestic tariff rates (110/120/140) have been sourced from the <a href="https://ceb.mu" target="_blank">Central Electricity Board (CEB)</a> website and are effective as of February 2023.
+    </p>      
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
